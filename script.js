@@ -12,6 +12,21 @@ if (insVideo) {
 
 $(document).ready(function () {
 
+    $('#menu').on('click', function (e) {
+        e.stopPropagation();
+        $('.navbar').toggleClass('active');
+    });
+
+    $('.navbar a').on('click', function () {
+        $('.navbar').removeClass('active');
+    });
+
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('.header').length) {
+            $('.navbar').removeClass('active');
+        }
+    });
+
     $(window).on("scroll load", function () {
 
         if ($(window).scrollTop() > 60) {

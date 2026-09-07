@@ -1159,3 +1159,223 @@ button:active,
         height: 160px;
     }
 }
+
+
+@media (max-width: 600px) {
+
+    .header {
+        height: 70px;
+        padding: 0.5rem 5%;
+    }
+
+    .header .logo img {
+        width: 100px;
+    }
+
+    #menu {
+        display: block;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+
+    #menu img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 5px;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #222;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .header .navbar.active {
+        display: flex;
+    }
+
+    .header .navbar a {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        margin: 0;
+        padding: 1rem;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .header .navbar a:last-child {
+        border-bottom: none;
+    }
+
+    .header .navbar a:hover,
+    .header .navbar a.active {
+        color: #fff;
+        background: #333;
+        border-bottom: none;
+    }
+
+    .header.active .navbar {
+        background: #222;
+    }
+
+    .header.active .navbar a {
+        color: #fff;
+    }
+
+    .header.active .navbar a:hover,
+    .header.active .navbar a.active {
+        color: #fff;
+        background: #333;
+    }
+
+    .home .home-slider .box {
+        height: 75vh;
+        min-height: 450px;
+        background-position: center;
+    }
+
+    .home .home-slider .content {
+        left: 6%;
+        right: 6%;
+        max-width: 90%;
+    }
+
+    .home .home-slider .content h3 {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    .home .home-slider .content span {
+        font-size: 1.3rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .sell {
+        padding: 3rem 5%;
+    }
+
+    .sell .box-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .sell .box-container .box .image {
+        height: 22rem;
+    }
+
+    .banner-container {
+        padding: 2rem 5%;
+        gap: 1rem;
+    }
+
+    .banner-container .banner {
+        flex: 1 1 100%;
+        height: 18rem;
+    }
+
+    .banner-container .banner .content {
+        left: 1.2rem;
+        right: 1rem;
+    }
+
+    .banner-container .banner .content h3 {
+        font-size: 1.5rem;
+    }
+
+    .timer-banner .time {
+        height: auto;
+        min-height: 550px;
+    }
+
+    .timer-banner .insidemain {
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 5%;
+    }
+
+    .timer-banner .title-enddate {
+        text-align: center;
+    }
+
+    .timer-banner .title-enddate span {
+        font-size: 1.7rem;
+    }
+
+    .timer-banner .title-enddate h2 {
+        font-size: 1.1rem;
+    }
+
+    .timer-banner .inp {
+        justify-content: center;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .timer-banner .infield input {
+        width: 60px;
+        height: 60px;
+        font-size: 1.4rem;
+    }
+
+    .timer-banner .infield h3 {
+        font-size: 0.7rem;
+    }
+
+    .contact .row {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    .contact .row .image {
+        width: 100%;
+        height: 250px;
+        margin-top: 0;
+    }
+
+    .contact .row .image .i_text {
+        padding: 5rem 1rem 1rem;
+    }
+
+    .contact .row form {
+        width: 100%;
+        padding: 1rem 0 3rem;
+    }
+
+    .contact .row form .inputBox {
+        flex-direction: column;
+    }
+
+    .contact .row form .inputBox input {
+        width: 100%;
+    }
+
+    .contact .row form input,
+    .contact .row form textarea {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 30px 5%;
+    }
+
+    .footer .box-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
