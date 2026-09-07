@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="icon" type="image/png" href="logo.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Vloop - Sorter</title>
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <img src="logo.png" alt="Vloop Logo">
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html#product">Products</a>
+        <a href="index.html#women">Women</a>
+        <a href="index.html#men">Men</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="sorter.html" class="active">Click Me!</a>
+    </nav>
+
+    <div id="menu">
+        <img src="menu.jpg" alt="Menu">
+    </div>
+
+</header>
+
+<section class="sorter">
+
+    <div class="sorter-content">
+
+        <h1 id="sorterTitle">Choose Your Tops</h1>
+
+        <p id="sorterDescription">
+            Keep what you would wear.
+        </p>
+
+        <div class="card-container" id="cardContainer"></div>
+
+        <div class="sorter-buttons">
+
+            <button id="noBtn" class="sorter-button no">
+                DROP
+            </button>
+
+            <button id="yesBtn" class="sorter-button yes">
+                KEEP
+            </button>
+
+        </div>
+
+        <div class="sorter-status" id="sorterStatus">
+            0 / 0
+        </div>
+
+        <button id="restartBtn" class="restart-btn">
+            Start Again
+        </button>
+
+    </div>
+
+</section>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
