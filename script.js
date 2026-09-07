@@ -14,9 +14,6 @@ $(document).ready(function () {
 
     $(window).on("scroll load", function () {
 
-        $('#menu').removeClass("fa-times");
-        $('.navbar').removeClass("active");
-
         if ($(window).scrollTop() > 60) {
             $('.header').addClass("active");
         } else {
@@ -896,3 +893,22 @@ restartBtn.addEventListener(
 shuffleCategories();
 shuffleProducts();
 createCards();
+
+const menu = document.getElementById("menu");
+const navbar = document.querySelector(".navbar");
+
+if (menu && navbar) {
+
+    menu.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+    });
+
+    navbar.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", function () {
+            navbar.classList.remove("active");
+        });
+
+    });
+
+}
